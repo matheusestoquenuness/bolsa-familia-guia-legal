@@ -24,7 +24,7 @@
 <p>O app não solicita acesso a contatos, fotos, câmera, microfone, localização precisa, dados do Saúde ou informações de pagamento. O endereço IP pode permitir aos fornecedores estimar uma localização aproximada.</p>
 <h2>2. Consulta de benefícios</h2>
 <p>Quando você solicita uma consulta, enviamos o NIS e o período escolhido, por conexão HTTPS, ao nosso serviço no Firebase, que consulta a API do Portal da Transparência. O resultado volta ao aplicativo para exibição.</p>
-<p>Os registros retornados pela fonte pública podem conter nome, NIS, CPF parcialmente oculto, valor e competência do benefício. Esses dados passam pelo backend para chegar à tela; não criamos com eles um cadastro de beneficiários em nossos servidores.</p>
+<p>Após a consulta, os dados são descartados pelo backend, sem armazenamento em nosso banco de dados.</p>
 <p>Nosso backend não grava o NIS nem o resultado da consulta no banco de dados. A aplicação também não inclui esses dados nos registros de erro que produz. A infraestrutura e o serviço público podem manter registros técnicos de acesso conforme suas próprias regras.</p>
 <p>Consulte apenas seus próprios dados ou os de uma pessoa que tenha autorizado você a ajudá-la. Os registros públicos podem estar desatualizados e não confirmam saldo disponível para saque. Correções nos registros de origem devem ser solicitadas aos canais oficiais do programa; não podemos alterar a base governamental.</p>
 <h2>3. Chat com inteligência artificial</h2>
