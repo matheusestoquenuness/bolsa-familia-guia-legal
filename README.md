@@ -10,7 +10,7 @@ Somos um guia independente. Não representamos o Governo Federal, a CAIXA ou o M
 
 Não exigimos cadastro com nome, e-mail ou senha. Os dados preenchidos na calculadora, as escolhas do calendário e as preferências locais são usados no próprio celular. Não recebemos esses dados em nossos servidores nem os incluímos nas análises de uso.
 
-Ficam apenas no aparelho, no uso dessas funções: renda e composição familiar informadas na calculadora; mês e final do NIS selecionados no calendário; preferências de avisos e avaliação; e dados de perfil que tenham sido salvos em versões antigas. A cópia criada pela opção “Lembrar NIS” também é armazenada somente no celular. Salvar essa cópia não a envia a um cadastro na nuvem; realizar uma consulta utiliza o NIS como explicado abaixo.
+Ficam apenas no aparelho, no uso dessas funções: renda e composição familiar informadas na calculadora; mês e final do NIS selecionados no calendário; e preferências de avisos e avaliação. A cópia criada pela opção “Lembrar NIS” também é armazenada somente no celular. Salvar essa cópia não a envia a um cadastro na nuvem; realizar uma consulta utiliza o NIS como explicado abaixo.
 
 Há envio de dados para as seguintes finalidades:
 
@@ -47,7 +47,7 @@ A OpenAI pode conservar conteúdo e metadados para prevenção de abusos, normal
 
 A opção “Lembrar NIS” é facultativa. Quando ativada, guarda o NIS no armazenamento protegido do iOS, o Keychain. Desativá-la apaga o NIS salvo por essa opção. Dados do Keychain podem persistir após a desinstalação; apague o NIS pela opção do app antes de removê-lo.
 
-Preferências de avisos e o indicador de solicitação de avaliação ficam no armazenamento local. Eles são diferentes dos eventos de análise de uso enviados ao Firebase, descritos na seção 7. Instalações atualizadas de versões antigas também podem conservar dados de perfil anteriormente fornecidos, como nome, telefone ou NIS. O app atual não exige preencher esse perfil nem envia esses campos ao backend como cadastro.
+Preferências de avisos e o indicador de solicitação de avaliação ficam no armazenamento local. Eles são diferentes dos eventos de análise de uso enviados ao Firebase, descritos na seção 7.
 
 Os dados digitados na calculadora, como renda e composição familiar, são processados no aparelho. A seleção de mês e final do NIS no calendário também é local. Não enviamos esses valores ao chat, ao Firebase ou aos anúncios como parte dessas funções.
 
