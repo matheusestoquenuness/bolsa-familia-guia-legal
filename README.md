@@ -6,21 +6,28 @@ O Bolsa Família Guia é desenvolvido por Matheus Estoque, responsável pelo tra
 
 Somos um guia independente. Não representamos o Governo Federal, a CAIXA ou o Ministério do Desenvolvimento e Assistência Social. O app não realiza cadastro no programa, não aprova benefícios e não movimenta dinheiro.
 
-## 1. Quais dados usamos
+## 1. O que fica no celular e o que é enviado
 
-Usamos apenas os dados necessários às funções escolhidas e ao funcionamento dos serviços de segurança, anúncios e estatísticas descritos nesta política. Não exigimos que você crie um cadastro com nome, e-mail ou senha para consultar ou conversar com o assistente.
+Não exigimos cadastro com nome, e-mail ou senha. Os dados preenchidos na calculadora, as escolhas do calendário e as preferências locais são usados no próprio celular. Não recebemos esses dados em nossos servidores nem os incluímos nas análises de uso.
 
-- Consulta: NIS informado, mês e ano escolhidos, além dos registros retornados pelo Portal da Transparência. Esses registros podem conter nome, NIS, CPF parcialmente oculto, valor e competência do benefício.
-- Chat: pergunta digitada e mensagens recentes da conversa, incluindo informações pessoais que você eventualmente escrever.
-- Segurança: identificador de autenticação anônima, contadores de solicitações, horários, tokens de validação do app e informações técnicas da conexão.
-- Estatísticas e anúncios: identificadores de instalação e dispositivo, endereço IP, informações do aparelho e sistema, eventos de navegação, impressões e interações com anúncios, além de dados técnicos de diagnóstico e desempenho tratados pelos serviços utilizados.
-- Preferências: escolha de lembrar o NIS, avisos já apresentados e registro local de solicitação de avaliação.
+Ficam apenas no aparelho, no uso dessas funções: renda e composição familiar informadas na calculadora; mês e final do NIS selecionados no calendário; preferências de avisos e avaliação; e dados de perfil que tenham sido salvos em versões antigas. A cópia criada pela opção “Lembrar NIS” também é armazenada somente no celular. Salvar essa cópia não a envia a um cadastro na nuvem; realizar uma consulta utiliza o NIS como explicado abaixo.
+
+Há envio de dados para as seguintes finalidades:
+
+- Consulta solicitada por você: NIS e período são enviados temporariamente pelo Firebase ao Portal da Transparência. O resultado retorna ao celular. Nosso backend não grava esses dados no banco de dados.
+- Questionário ou chat com IA: após sua autorização, a pergunta e as mensagens recentes são enviadas pelo Firebase à OpenAI para gerar a resposta. Isso inclui qualquer dado pessoal que você digitar na conversa.
+- Análise de uso: eventos de navegação e de exibição de anúncios, identificadores técnicos e informações do dispositivo são enviados aos serviços do Google. Esses eventos não incluem os dados preenchidos na calculadora, o NIS ou o conteúdo do chat.
+- Publicidade e segurança: AdMob, Firebase e Apple processam os identificadores, informações técnicas e registros necessários aos anúncios, à autenticação e à prevenção de abusos, conforme as seções 5 a 7.
+
+Processar algo no celular, transmiti-lo para responder a uma solicitação e guardá-lo em um servidor são operações diferentes. As próximas seções distinguem essas situações para cada função.
 
 O app não solicita acesso a contatos, fotos, câmera, microfone, localização precisa, dados do Saúde ou informações de pagamento. O endereço IP pode permitir aos fornecedores estimar uma localização aproximada.
 
 ## 2. Consulta de benefícios
 
 Quando você solicita uma consulta, enviamos o NIS e o período escolhido, por conexão HTTPS, ao nosso serviço no Firebase, que consulta a API do Portal da Transparência. O resultado volta ao aplicativo para exibição.
+
+Os registros retornados pela fonte pública podem conter nome, NIS, CPF parcialmente oculto, valor e competência do benefício. Esses dados passam pelo backend para chegar à tela; não criamos com eles um cadastro de beneficiários em nossos servidores.
 
 Nosso backend não grava o NIS nem o resultado da consulta no banco de dados. A aplicação também não inclui esses dados nos registros de erro que produz. A infraestrutura e o serviço público podem manter registros técnicos de acesso conforme suas próprias regras.
 
@@ -40,7 +47,7 @@ A OpenAI pode conservar conteúdo e metadados para prevenção de abusos, normal
 
 A opção “Lembrar NIS” é facultativa. Quando ativada, guarda o NIS no armazenamento protegido do iOS, o Keychain. Desativá-la apaga o NIS salvo por essa opção. Dados do Keychain podem persistir após a desinstalação; apague o NIS pela opção do app antes de removê-lo.
 
-Preferências e indicadores de uso ficam no armazenamento local. Instalações atualizadas de versões antigas também podem conservar dados de perfil anteriormente fornecidos, como nome, telefone ou NIS. O app atual não exige preencher esse perfil nem envia esses campos ao backend como cadastro.
+Preferências de avisos e o indicador de solicitação de avaliação ficam no armazenamento local. Eles são diferentes dos eventos de análise de uso enviados ao Firebase, descritos na seção 7. Instalações atualizadas de versões antigas também podem conservar dados de perfil anteriormente fornecidos, como nome, telefone ou NIS. O app atual não exige preencher esse perfil nem envia esses campos ao backend como cadastro.
 
 Os dados digitados na calculadora, como renda e composição familiar, são processados no aparelho. A seleção de mês e final do NIS no calendário também é local. Não enviamos esses valores ao chat, ao Firebase ou aos anúncios como parte dessas funções.
 
