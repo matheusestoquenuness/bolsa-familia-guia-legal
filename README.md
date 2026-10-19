@@ -27,7 +27,7 @@ O app não solicita acesso a contatos, fotos, câmera, microfone, localização 
 
 Quando você solicita uma consulta, enviamos o NIS e o período escolhido, por conexão HTTPS, ao nosso serviço no Firebase, que consulta a API do Portal da Transparência. O resultado volta ao aplicativo para exibição.
 
-Os registros retornados pela fonte pública podem conter nome, NIS, CPF parcialmente oculto, valor e competência do benefício. Esses dados passam pelo backend para chegar à tela; não criamos com eles um cadastro de beneficiários em nossos servidores.
+Após a consulta, os dados são descartados pelo backend, sem armazenamento em nosso banco de dados.
 
 Nosso backend não grava o NIS nem o resultado da consulta no banco de dados. A aplicação também não inclui esses dados nos registros de erro que produz. A infraestrutura e o serviço público podem manter registros técnicos de acesso conforme suas próprias regras.
 
